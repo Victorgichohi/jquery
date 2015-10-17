@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>this selector</title>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+            $('#showstuff').click(function(){
+            $("p:contains('one')").fadeIn();
+          });
+          });
+      </script>
+      <style>
+      p{
+        display:none;
+      }
+      </style>
+  </head>
+  <body>
+    <input type="button" name="show elements" id="showstuff">
+  <p>one</p>
+  <p>two</p>
+  <p>one</p>
+  <p>three</p>
+  <p>four</p>
+<p>six</p>
+
+
+  </body>
+</html>
