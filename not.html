@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>not selector</title>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+          $('h3:not(h3:eq(0))').fadeOut(2000);
+          });
+      </script>
+  </head>
+  <body>
+    <h3>one</h3>
+      <h3>two</h3>
+        <h3>three</h3>
+        <h3>four</h3>
+
+
+  </body>
+</html>
