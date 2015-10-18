@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>show and hide</title>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+          $('#hide').click(function(){
+            $('#first').hide(4000);
+          });
+          $('#show').click(function(){
+            $('#first').show(4000);
+          });
+          });
+      </script>
+      <style type="text/css">
+      #first{
+        width:180px;
+        height:100px;
+        background:red;
+      }
+      </style>
+  </head>
+  <body>
+  <input type="button" value="hide" id="hide" >
+  <input type="button" value="show" id="show" >
+  <div id="first"></div>
+  </body>
+</html>
